@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* si_sale_mrp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-19 22:00+0000\n"
+"PO-Revision-Date: 2022-12-19 22:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: si_sale_mrp
+#: model:ir.model.fields,field_description:si_sale_mrp.field_mrp_production__partner_id
+#: model_terms:ir.ui.view,arch_db:si_sale_mrp.view_mrp_production_filter_inherited
+msgid "Customer"
+msgstr "Client"
+
+#. module: si_sale_mrp
+#: model:ir.model.fields,field_description:si_sale_mrp.field_mrp_production__client_order_ref
+msgid "Customer Reference"
+msgstr "Référence Bon de commande client"
+
+#. module: si_sale_mrp
+#: model:ir.model,name:si_sale_mrp.model_mrp_production
+msgid "Production Order"
+msgstr "Ordre de fabrication"
+
+#. module: si_sale_mrp
+#: model_terms:ir.ui.view,arch_db:si_sale_mrp.view_mrp_production_filter_inherited
+msgid "Sale Order"
+msgstr "Référence Bon de commande"
+
+#. module: si_sale_mrp
+#: model:ir.model.fields,field_description:si_sale_mrp.field_mrp_production__sale_id
+msgid "Sales order"
+msgstr "Référence Bon de commande"

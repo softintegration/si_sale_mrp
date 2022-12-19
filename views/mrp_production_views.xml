@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="mrp_production_form_view_inherited" model="ir.ui.view">
+            <field name="name">mrp.production.form.view.inherited</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_id']" position="before">
+                    <field name="partner_id"/>
+                </xpath>
+                <xpath expr="//notebook/page[@name='miscellaneous']/group/group/field[@name='origin']" position="before">
+                    <field name="sale_id"/>
+                    <field name="client_order_ref" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="mrp_production_tree_view_inherited" model="ir.ui.view">
+            <field name="name">mrp.production.tree.view.inherited</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_id']" position="before">
+                    <field name="partner_id" optional="show"/>
+                </xpath>
+                <xpath expr="//field[@name='origin']" position="before">
+                    <field name="sale_id" optional="show"/>
+                    <field name="client_order_ref" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_mrp_production_filter_inherited" model="ir.ui.view">
+            <field name="name">view.mrp.production.filter.inherited</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.view_mrp_production_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_id']" position="before">
+                    <field name="partner_id"/>
+                </xpath>
+                <xpath expr="//field[@name='origin']" position="before">
+                    <field name="sale_id"/>
+                    <field name="client_order_ref"/>
+                </xpath>
+                <xpath expr="//filter[@name='product']" position="before">
+                    <filter string="Customer" name="partner" domain="[]" context="{'group_by': 'partner_id'}"/>
+                </xpath>
+                <xpath expr="//filter[@name='product']" position="after">
+                    <filter string="Sale Order" name="sale_order" domain="[]" context="{'group_by': 'sale_id'}"/>
+                </xpath>
+            </field>
+        </record>
+
+
+</odoo>
