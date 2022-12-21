@@ -10,12 +10,13 @@
     'qweb': [],
     'description': False,
     'images': [],
-    'version': '1.0.1.1',
+    'version': '1.0.1.2',
     'category': 'Sale/Manufacturing',
     'demo': [],
     'depends': ['sale','mrp'],
     'data': [
         'views/mrp_production_views.xml',
+        'views/res_config_settings_views.xml'
     ],
     'license': 'LGPL-3',
 }

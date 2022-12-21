@@ -6,14 +6,37 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-19 22:00+0000\n"
-"PO-Revision-Date: 2022-12-19 22:00+0000\n"
+"POT-Creation-Date: 2022-12-21 08:03+0000\n"
+"PO-Revision-Date: 2022-12-21 08:03+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: si_sale_mrp
+#: model:ir.model.fields,field_description:si_sale_mrp.field_res_config_settings__module_sale_mrp_production_request
+#: model_terms:ir.ui.view,arch_db:si_sale_mrp.res_config_settings_view_form_inherited
+msgid ""
+"Automatic link between source Sale orders and created Production orders"
+msgstr ""
+"Lien automatique entre les Bon de commandes de vente source et les Ordre de fabrication"
+
+#. module: si_sale_mrp
+#: model:ir.model,name:si_sale_mrp.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de config"
+
+#. module: si_sale_mrp
+#: model:ir.model.fields,help:si_sale_mrp.field_res_config_settings__module_sale_mrp_production_request
+#: model_terms:ir.ui.view,arch_db:si_sale_mrp.res_config_settings_view_form_inherited
+msgid ""
+"Create direct link between the origin Sale orders and the created Production"
+" orders by the Production order requests"
+msgstr ""
+"Créer un lien direct entre les Bon de commande et les Ordres de fabrication"
+" en passant par les Demandes de fabrication"
 
 #. module: si_sale_mrp
 #: model:ir.model.fields,field_description:si_sale_mrp.field_mrp_production__partner_id
@@ -25,6 +48,17 @@ msgstr "Client"
 #: model:ir.model.fields,field_description:si_sale_mrp.field_mrp_production__client_order_ref
 msgid "Customer Reference"
 msgstr "Référence Bon de commande client"
+
+#. module: si_sale_mrp
+#: model_terms:ir.ui.view,arch_db:si_sale_mrp.res_config_settings_view_form_inherited
+msgid ""
+"Direct link between Sales and Production allow you to pass directly from "
+"Sale order to Manufacturing of the needed products and quantities,this is "
+"very useful specially in the companies with BTO strategy"
+msgstr ""
+"Cette option vous permet de passer des "
+"Bons de commande de vente à la fabrication des articles et quantités nécessaires, c'est"
+"très utile dans les entreprises avec stratégie BTO (Production à la commande)"
 
 #. module: si_sale_mrp
 #: model:ir.model,name:si_sale_mrp.model_mrp_production
@@ -40,3 +74,8 @@ msgstr "Référence Bon de commande"
 #: model:ir.model.fields,field_description:si_sale_mrp.field_mrp_production__sale_id
 msgid "Sales order"
 msgstr "Référence Bon de commande"
+
+#. module: si_sale_mrp
+#: model_terms:ir.ui.view,arch_db:si_sale_mrp.res_config_settings_view_form_inherited
+msgid "Sales/Production link"
+msgstr "Liaison Vente/Fabrication"
