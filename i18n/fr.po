@@ -45,11 +45,6 @@ msgid "Customer"
 msgstr "Client"
 
 #. module: si_sale_mrp
-#: model:ir.model.fields,field_description:si_sale_mrp.field_mrp_production__client_order_ref
-msgid "Customer Reference"
-msgstr "Référence Bon de commande client"
-
-#. module: si_sale_mrp
 #: model_terms:ir.ui.view,arch_db:si_sale_mrp.res_config_settings_view_form_inherited
 msgid ""
 "Direct link between Sales and Production allow you to pass directly from "
@@ -68,11 +63,6 @@ msgstr "Ordre de fabrication"
 #. module: si_sale_mrp
 #: model_terms:ir.ui.view,arch_db:si_sale_mrp.view_mrp_production_filter_inherited
 msgid "Sale Order"
-msgstr "Référence Bon de commande"
-
-#. module: si_sale_mrp
-#: model:ir.model.fields,field_description:si_sale_mrp.field_mrp_production__sale_id
-msgid "Sales order"
 msgstr "Référence Bon de commande"
 
 #. module: si_sale_mrp
