@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mrp_bom_byproduct_sale_manager,mrp.bom.byproduct salemanager,mrp.model_mrp_bom_byproduct,sales_team.group_sale_manager,1,0,0,0

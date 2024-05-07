@@ -10,11 +10,12 @@
     'qweb': [],
     'description': False,
     'images': [],
-    'version': '1.0.1.3',
+    'version': '1.0.1.4',
     'category': 'Sale/Manufacturing',
     'demo': [],
     'depends': ['sale','mrp'],
     'data': [
+        'security/ir.model.access.csv',
         'views/mrp_production_views.xml',
         'views/res_config_settings_views.xml'
     ],
